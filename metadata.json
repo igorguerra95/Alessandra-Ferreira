@@ -1,0 +1,6 @@
+{
+  "name": "Alessandra Ferreira - Psicóloga",
+  "description": "Psicoterapia humanizada e especializada em ansiedade, depressão, relacionamentos e autoconhecimento. Atendimento presencial e online seguro para todo o Brasil e exterior.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

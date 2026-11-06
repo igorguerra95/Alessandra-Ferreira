@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+    /* Semântica de Cores (Paleta Rosa Quartzo #F472B6 + Branco Gelo #F8FAFC) */
+    --color-bg-ice: 210 40% 98%;          /* #F8FAFC */
+    --color-fg-deep: 222 47% 15%;         /* Ardósia suave escura */
+    --color-fg-muted: 215 16% 45%;        /* Texto secundário calmo */
+    
+    --color-rose-quartz: 330 81% 65%;     /* #F472B6 Rosa Quartzo */
+    --color-rose-deep: 332 75% 48%;       /* Acento profundo */
+    --color-rose-light: 330 85% 96%;      /* Pêssego/rosa orvalho */
+    --color-rose-soft: 330 70% 93%;       /* Pílula e badges */
+    
+    --color-surface-white: 0 0% 100%;     /* Cards brancos translúcidos */
+    --color-border-subtle: 330 20% 90%;   /* Bordas hairline refinadas */
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: hsl(var(--color-fg-deep));
+    background-color: hsl(var(--color-bg-ice));
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: rgba(244, 114, 182, 0.25);
+    color: #831843;
+  }
+}
+
+/* Tipografia Editorial de Alto Padrão */
+.font-display {
+  font-family: var(--font-serif);
+}
+
+.font-body {
+  font-family: var(--font-sans);
+}
+
+/* Camadas de sombra refinadas e orgânicas */
+.shadow-serene-sm {
+  box-shadow: 0 2px 10px -2px rgba(15, 23, 42, 0.04), 0 1px 4px -1px rgba(244, 114, 182, 0.06);
+}
+
+.shadow-serene-md {
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.05), 0 4px 12px -2px rgba(244, 114, 182, 0.08);
+}
+
+.shadow-serene-lg {
+  box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.08), 0 8px 24px -4px rgba(244, 114, 182, 0.12);
+}
+
+.shadow-rose-glow {
+  box-shadow: 0 12px 32px -4px rgba(244, 114, 182, 0.35);
+}
+
+/* Textura sutil e elementos de atmosfera */
+.bg-subtle-mesh {
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(244, 114, 182, 0.08) 0px, transparent 50%),
+    radial-gradient(at 90% 10%, rgba(254, 205, 211, 0.15) 0px, transparent 40%),
+    radial-gradient(at 80% 80%, rgba(244, 114, 182, 0.06) 0px, transparent 50%),
+    radial-gradient(at 20% 90%, rgba(241, 245, 249, 0.6) 0px, transparent 40%);
+}
+
+.bg-glass {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
